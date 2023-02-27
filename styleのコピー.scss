@@ -1,0 +1,500 @@
+@charset "UTF-8";
+
+// header部分
+
+
+
+// サイドバー
+.side-wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    top: 0;
+    left: 100%;
+    grid-area: sidebar;
+}
+
+.side-wrapper .p-sideMenu {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    @media screen and (min-width: 1025px){
+        height: auto;
+    }
+}
+
+.side-wrapper .p-sideMenu__main {
+    @media screen and (min-width: 1025px){
+    width: 19vw;
+    background: inherit;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #f2ede9;
+    transition-duration: 0s;
+}
+}
+
+// サイドバー　Menu文字　位置
+
+.c-title--sidebar {
+    @media screen and (min-width: 1025px){
+    display: inherit;
+    margin-top: 82px;
+    margin-left: 46px;
+}
+}
+
+// サイドバー　Menu文字スタイル
+
+.c-title--sidebar {
+    font-size: 34px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #707070;
+}
+
+.c-title--sidebar__menu {
+    font-size: 24px;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: bold;
+    color: #707070;
+    margin-top: 5.3125rem;
+}
+
+.side-wrapper .p-sideMenu__main .c-title--sidebar__menu {
+    @media screen and (min-width: 1025px){
+        margin: 3rem 0 0 20%;
+}
+}
+
+.side-wrapper .p-sideMenu__main .c-text--sidebar {
+    @media screen and (min-width: 1025px){
+    margin: 3rem 0 0 26%;
+}
+}
+
+// サイドバー　メニュー
+
+.c-text--sidebar {
+    font-size: 20px;
+    font-family: "M PLUS 1p", sans-serif;
+    color: #707070;
+}
+
+.side-wrapper .p-sideMenu__main .c-text--sidebar > li {
+    margin-bottom: 23px;
+}
+
+// メインビュジュアル　ハンバーガー写真　ダミーサイト
+
+.l-main {
+    height: auto;
+    background-color: #fffdfa;
+    grid-area: main;
+}
+
+.l-main .p-visual--sub {
+    list-style: none;
+    width: 100%;
+    grid-area: mainMiddle;
+}
+
+.p-visual--main {
+    background-image:url(/images/main-visual-1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+@media screen and (min-width: 1025px){
+    height: 33.125rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+}
+}
+
+// ダミーサイト文字
+
+.l-main .p-visual--main .c-title--main {
+    @media screen and (min-width: 1025px){
+        padding-left: 86px;
+    }
+    padding: 119px 134px 115px 25px;
+}
+
+.c-font-family--mplus1 {
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+.c-font-weight--bold {
+    font-weight: bold;
+}
+
+.c-font-color--white {
+    color: #ffffff;
+}
+
+.c-title--main {
+    font-size: 45px;
+}
+
+// メイン下部　takeout
+
+.l-main .p-visual--sub {
+    list-style: none;
+    width: 100%;
+}
+
+.l-main .p-visual--sub--takeOut {
+    position: relative;
+}
+
+.l-main .p-visual--sub--eatIn {
+    position: relative;
+}
+
+.c-title--sub {
+    @media screen and (min-width: 1025px){
+    font-size: 50px;
+    }
+}
+
+
+
+// メイン　下部　Teke Out 画像
+
+.p-visual--sub--takeOut {
+    background-image:url(/images/main-visual-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    min-height: 642px;
+    margin: 0 20px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    gap: 4rem;
+    @media (min-width: 1280px){
+        width: calc(40.5vw - 151px);
+        margin: inherit;
+        margin-left: 111px;
+        margin-right: 80px;
+    }
+}
+
+.l-main .p-visual--sub--takeOut .c-title--sub {
+    margin-left: 15px;
+    padding-top: 11px;
+    margin-bottom: auto;
+}
+
+.l-main .p-visual--sub--takeOut .sub-section .c-title--sentence {
+    padding-top: 7px;
+    padding-left: 10px;
+}
+
+.c-title--sentence {
+    font-size: 22px;
+}
+
+.c-font-family--mplus1 {
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+.c-font-family--robot {
+    font-family: "Roboto", sans-serif;
+}
+
+.c-font-weight--bold {
+    font-weight: bold;
+}
+
+.c-font-color--ea {
+    color: #eaeaea;
+}
+
+.c-text--sub {
+    font-size: 16px;
+}
+
+.c-background-color--white {
+    background-color: #fff;
+}
+
+.c-font-color--3c {
+    color: #3c2a10;
+}
+
+.c-font-weight--normal {
+    font-weight: normal;
+}
+
+.l-main .p-visual--sub--takeOut .sub-section .c-text--sub {
+    margin: 3px 10px 15px;
+}
+
+.l-main .p-visual--sub--sentence {
+    margin-bottom: 15px;
+}
+
+.l-main .p-visual--sub--takeOut .sub-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+// メイン下部　EAT IN 　右画像
+
+.p-visual--sub--eatIn {
+    background-image: url(/images/main-visual-3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    min-height: 643px;
+    margin: 0 20px 49px 19px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    gap: 4rem;
+    @media (min-width: 1280px) {
+        width: calc(40.5vw - 152px);
+        margin: inherit;
+        margin-right: 112px;
+    }
+}
+
+.p-visual--sub--sentence {
+    height: 7.75rem;
+    opacity: 0.8;
+    display: inline-block;
+    height: auto;
+}
+
+.l-main .p-visual--sub--eatIn .sub-section .c-title--sentence {
+    padding-top: 7px;
+    padding-left: 10px;
+}
+
+.l-main .p-visual--sub--eatIn .sub-section {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-main .p-visual--sub--eatIn .sub-section .c-text--sub {
+    margin: 3px 11px 15px 10px;
+}
+
+.l-main .p-visual--sub--eatIn .c-title--sub {
+    margin-left: 15px;
+    padding-top: 11px;
+    margin-bottom: auto;
+}
+
+// 文字の下　下線ライン (teke out)
+
+.p-visual--sub--takeOut > .c-title--underline::after {
+    width: 2.118125rem;
+    height: 0.25rem;
+    bottom: -2rem;
+@media screen and (min-width: 1025px){
+    right: 13rem;
+}
+@media screen and (min-width: 768px){
+    right: 11.5rem;
+}
+}
+
+.c-title--underline::after {
+    content: "";
+    display: inline-block;
+    background-color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+// 文字の下　下線ライン　（eat in)
+
+.p-visual--sub--eatIn > .c-title--underline::after {
+    width: 33.89px;
+    height: 4px;
+    bottom: -2rem;
+    left: -7rem;
+    @media screen and (min-width: 1025px){
+        left: -8.5rem;
+    }
+    @media screen and (min-width: 768px){
+        left: -7.5rem;
+    }
+}
+
+.p-visual--sub {
+    @media screen and (min-width: 1025px){
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 131px;
+    }
+}
+
+.p-visual--sub > li {
+    @media screen and (min-width: 1025px){
+    display: flex;
+    flex: 1 0 auto;
+    }
+}
+
+// googleマップ部分
+
+.p-access .c-background--map {
+    background-size: cover;
+    display: inline-block;
+    height: auto;
+    min-height: 43.1875rem;
+    position: relative;
+    z-index: 1;
+    @media screen and (min-width: 1025px){
+        display: flex;
+        flex-flow: column;
+        align-items: baseline;
+    }
+}
+
+.c-background--map {
+    background-image: url(/images/google-map.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.c-title--access {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.p-access--map .c-title--access{
+    @media screen and (min-width: 1025px){
+        font-size: 36px;
+    padding-top: 83px;
+    margin-left: 119px;
+    }
+}
+
+.l-main .p-access .c-background--map .c-title--underline {
+    position: inherit;
+}
+
+.l-main .p-access .c-background--map .c-title--access {
+    position: inherit;
+    z-index: 3;
+}
+
+.u-background--overlay::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.p-access .c-background--overlay::after {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.p-access--map .c-text--access {
+    display: inline-block;
+    height: auto;
+    line-height: 2rem;
+    margin: 2.5rem 40px 51px;
+    position: inherit;
+    z-index: 3;
+    @media screen and (min-width: 1025px){
+        width: 42%;
+        padding-top: 5rem;
+        margin: 2.5rem 40px 1.3125rem;
+    }
+}
+
+.p-access--map::before {
+    @media screen and (min-width: 1025px){
+    width: 61%;
+    }
+    @media screen and(min-width: 768px){
+        height: 100%;
+    }
+}
+
+.c-text--access {
+    font-size: 14px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.p-access--map::before {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60%;
+}
+
+.c-background--overlay::after {
+    content: "";
+    display: block;
+}
+
+// フッター
+
+.c-background--footer {
+    background-image: url(/images/footer.png);
+}
+
+.c-background--footer {
+    height: 9.375rem;
+}
+
+.c-title--footer {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.l-footer {
+    text-align: center;
+    grid-area: footer;
+}
+
+.l-footer--menu {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    margin-bottom: auto;
+}
+
+.l-footer .c-text--copy-right {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.l-footer--menu .c-title--vertical-line::after {
+    width: 0.09375rem;
+    height: 70%;
+    margin: 0 1rem;
+    position: relative;
+    top: 15%;
+}
+
+.c-title--vertical-line::after {
+    content: "";
+    display: inline-block;
+    background-color: #fff;
+}
+
+.c-text--copy-right {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}

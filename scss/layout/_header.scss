@@ -1,0 +1,17 @@
+.l-header {
+    display: flex;
+        @media screen and (min-width: 1025px){   
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+        }
+}
+// header Hambuger 文字部分
+
+.l-header__top__logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    color: #707070;
+    margin: 67px 0 45px 65px;
+}
