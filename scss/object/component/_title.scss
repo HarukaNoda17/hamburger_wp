@@ -1,0 +1,29 @@
+// sidebar　Menu文字　位置
+
+.c-title--sidebar {
+    @media screen and (min-width: 1025px){
+    display: inherit;
+    margin-top: 82px;
+    margin-left: 46px;
+}
+}
+
+// sidebar　Menu文字スタイル
+
+.c-title--sidebar {
+    font-size: 34px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #707070;
+}
+
+.c-title--sidebar__menu {
+    font-size: 24px;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: bold;
+    color: #707070;
+    margin-top: 5.3125rem;
+    @media screen and (min-width: 1025px){
+        margin: 3rem 0 0 20%
+    }
+}

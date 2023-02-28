@@ -1,20 +1,13 @@
-// sidebar
-.side-wrapper {
-    width: auto;
-    height: auto;
-    display: flex;
-    top: 0;
-    left: 100%;
-    grid-area: sidebar;
-}
-
-.side-wrapper {
+.p-sideMenu {
     display: flex;
     justify-content: flex-end;
     height: 100vh;
     @media screen and (min-width: 1025px){
         height: auto;
     }
+}
+
+.p-sideMenu__main {
     @media screen and (min-width: 1025px){
         width: 19vw;
         background: inherit;

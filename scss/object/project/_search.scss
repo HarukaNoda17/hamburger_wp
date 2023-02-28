@@ -7,35 +7,9 @@
 // 検索フォームの　ポジション
 
 .p-search--form {
+    padding-bottom: 40px;
     @media screen and (min-width: 1025px){
-    margin-right: 2rem;
-    padding-bottom: 0;
+        margin-right: 2rem;
+        padding-bottom: 0;
     }
-}
-
-.p-search--form {
-    display: flex;
-    justify-content: center;
-    margin-left: 24px;
-        @media screen and (min-width: 1025px){
-        justify-content: flex-end;
-        margin-left: auto;
-        margin-right: 2%;
-        width: 35vw;
-        }
-}
-
-.p-search--form {
-    width: 20%;
-    height: 2.875rem;
-    border-radius: 10px;
-    border-width: 1px;
-    width: 70%;
-    height: 2.875rem;
-    border-radius: 10px;
-    border-width: 1px;
-    margin-right: 12px;
-    font-size: 24px;
-    text-indent: 3rem;
-    background-position: 16px 11px;
 }

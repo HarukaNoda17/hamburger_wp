@@ -1,5 +1,7 @@
 .l-header {
-    display: flex;
+    width: 100%;
+    height: auto;
+    grid-area: header;
         @media screen and (min-width: 1025px){   
             display: flex;
             justify-content: space-between;
@@ -13,5 +15,12 @@
     font-family: 'Roboto', sans-serif;
     font-size: 64px;
     color: #707070;
-    margin: 67px 0 45px 65px;
+    margin: 40px 0px 38px auto;
+    @media screen and (min-width: 1025px){
+        font-size: 52px;
+        margin-left: 20%;
+    }
+    @media (min-width: 1280px){
+        font-size: 64px;
+    }
 }
