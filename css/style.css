@@ -279,6 +279,15 @@ pre {
   }
 }
 
+.c-title--sidebar__menu:first-of-type {
+  margin-top: 212px;
+}
+@media screen and (min-width: 1025px) {
+  .c-title--sidebar__menu:first-of-type {
+    margin-top: 5.3125rem;
+  }
+}
+
 .c-text--sidebar {
   font-size: 20px;
   font-family: "M PLUS 1p", sans-serif;
