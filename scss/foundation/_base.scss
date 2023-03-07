@@ -15,6 +15,7 @@ font-feature-settings: "palt";
 text-size-adjust: 100%;
 font-size: 16px;
 height: 100%;
+width: 100%;
 }
 
 body {
@@ -37,6 +38,15 @@ ul {
     list-style-type: none;
 }
 
+input {
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 0px;
+    padding: 10px;
+    font-size: 100%;
+    margin:2px;
+}
+
 article {
     display: block;
 }
@@ -51,5 +61,5 @@ article {
     grid-template-areas:
         " header sidebar "
         " main sidebar "
-        " footer footer ";
+        " footer footer "
 }
