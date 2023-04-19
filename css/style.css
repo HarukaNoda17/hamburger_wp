@@ -239,6 +239,10 @@ pre {
   grid-area: mainMiddle;
 }
 
+.l-main .p-visual--main {
+  grid-area: mainTop;
+}
+
 .c-background-color--base {
   background-color: #fff7ef;
 }
@@ -415,6 +419,55 @@ pre {
     display: flex;
     align-items: center;
     margin-bottom: 120px;
+  }
+}
+
+.p-visual--sub {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 131px;
+}
+
+.p-visual--sub--takeOut {
+  background-image: url(/images/front/main-visual-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  min-height: 642px;
+  margin: 0 20px 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  gap: 4rem;
+  position: relative;
+}
+@media (min-width: 1280px) {
+  .p-visual--sub--takeOut {
+    width: calc(40.5vw - 151px);
+    margin: inherit;
+    margin-left: 111px;
+    margin-right: 80px;
+  }
+}
+
+.p-visual--sub--eatIn {
+  background-image: url(/images/front/main-visual-3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  min-height: 643px;
+  margin: 0 20px 49px 19px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  gap: 4rem;
+  position: relative;
+}
+@media (min-width: 1280px) {
+  .p-visual--sub--eatIn {
+    width: calc(40.5vw - 152px);
+    margin: inherit;
+    margin-right: 112px;
   }
 }
 
