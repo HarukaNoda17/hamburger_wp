@@ -227,6 +227,18 @@ pre {
   }
 }
 
+.l-main {
+  height: auto;
+  background-color: #fffdfa;
+  grid-area: main;
+}
+
+.l-main .p-visual--sub {
+  list-style: none;
+  width: 100%;
+  grid-area: mainMiddle;
+}
+
 .c-background-color--base {
   background-color: #fff7ef;
 }
@@ -245,6 +257,10 @@ pre {
 
 .c-font-family--robot {
   font-family: "Roboto", sans-serif;
+}
+
+.c-font-color--white {
+  color: #ffffff;
 }
 
 .c-img--magnifying-glass {
@@ -292,6 +308,17 @@ pre {
 @media screen and (min-width: 1025px) {
   .c-title--sidebar__menu:first-of-type {
     margin-top: 5.3125rem;
+  }
+}
+
+.c-title--main {
+  font-size: 36px;
+  padding: 119px 134px 115px 25px;
+}
+@media screen and (min-width: 1025px) {
+  .c-title--main {
+    padding-left: 86px;
+    font-size: 45px;
   }
 }
 
@@ -373,6 +400,21 @@ pre {
     overflow-y: scroll;
     background-color: #f2ede9;
     transition-duration: 0s;
+  }
+}
+
+.p-visual--main {
+  background-image: url(/images/front/main-visual-1.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1025px) {
+  .p-visual--main {
+    height: 33.125rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
   }
 }
 

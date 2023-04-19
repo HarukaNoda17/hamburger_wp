@@ -34,3 +34,16 @@
     margin-top: 5.3125rem;
     }
 }
+
+// main 文字スタイル
+
+.c-title {
+    &--main {
+        font-size: 36px;
+        padding: 119px 134px 115px 25px;
+        @media screen and (min-width: 1025px) {
+            padding-left: 86px;
+            font-size: 45px;
+        }
+    }
+}

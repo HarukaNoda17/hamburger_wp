@@ -1,0 +1,14 @@
+// フロントページ　メイン写真
+
+.p-visual--main {
+    background-image:url(/images/front/main-visual-1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+@media screen and (min-width: 1025px){
+    height: 33.125rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+}
+}

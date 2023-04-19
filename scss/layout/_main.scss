@@ -1,0 +1,13 @@
+// メインビュジュアル　ハンバーガー写真　ダミーサイト
+
+.l-main {
+    height: auto;
+    background-color: #fffdfa;
+    grid-area: main;
+}
+
+.l-main .p-visual--sub {
+    list-style: none;
+    width: 100%;
+    grid-area: mainMiddle;
+}
