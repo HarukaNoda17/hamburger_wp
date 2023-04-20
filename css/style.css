@@ -280,6 +280,12 @@ pre {
   margin-bottom: auto;
 }
 
+.l-main .p-visual--sub--takeOut .sub-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+}
+
 .c-background-color--base {
   background-color: #fff7ef;
 }
@@ -376,7 +382,7 @@ pre {
   margin-left: 15px;
   padding-top: 11px;
   margin-bottom: auto;
-  font-size: 41px;
+  font-size: 50px;
 }
 
 .c-title--underline::after {
@@ -389,6 +395,8 @@ pre {
 
 .c-title--sentence {
   font-size: 22px;
+  padding-top: 7px;
+  padding-left: 10px;
 }
 
 .c-text--sidebar {
@@ -573,6 +581,16 @@ pre {
   bottom: -2rem;
   right: 10.5rem;
 }
+@media screen and (min-width: 768px) {
+  .p-visual--sub--takeOut > .c-title--underline::after {
+    right: 11.5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual--sub--takeOut > .c-title--underline::after {
+    right: 13rem;
+  }
+}
 
 .p-visual--sub--eatIn > .c-title--underline::after {
   width: 33.89px;
@@ -580,9 +598,18 @@ pre {
   bottom: -2rem;
   left: -7rem;
 }
+@media screen and (min-width: 768px) {
+  .p-visual--sub--eatIn > .c-title--underline::after {
+    right: 11.5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual--sub--eatIn > .c-title--underline::after {
+    right: 13rem;
+  }
+}
 
 .p-visual--sub--sentence {
-  height: 7.75rem;
   opacity: 0.8;
   display: inline-block;
   height: auto;
