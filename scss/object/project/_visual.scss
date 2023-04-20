@@ -19,6 +19,27 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 131px;
+@media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    }
+@media screen and (min-width: 1025px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 131px;
+    } 
+}
+
+.p-visual--sub > li{
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex: 1 0 auto;
+    }
+@media screen and (min-width: 1025px) {
+    display: flex;
+    flex: 1 0 auto;
+}
 }
 
 // 　フロントページ　サブ写真　takeOut
@@ -62,4 +83,29 @@
     margin: inherit;
     margin-right: 112px;
     }
+}
+
+// 　tekeOut EAT In 文字下　白線
+
+.p-visual--sub--takeOut > .c-title--underline::after {
+    width: 2.118125rem;
+    height: 0.25rem;
+    bottom: -2rem;
+    right: 10.5rem;
+}
+
+.p-visual--sub--eatIn > .c-title--underline::after {
+    width: 33.89px;
+    height: 4px;
+    bottom: -2rem;
+    left: -7rem;
+}
+
+// takeOut EATIn 背景
+
+.p-visual--sub--sentence {
+    height: 7.75rem;
+    opacity: 0.8;
+    display: inline-block;
+    height: auto;
 }

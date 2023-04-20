@@ -39,11 +39,29 @@
 
 .c-title {
     &--main {
-        font-size: 36px;
-        padding: 119px 134px 115px 25px;
-        @media screen and (min-width: 1025px) {
-            padding-left: 86px;
-            font-size: 45px;
-        }
+        font-size: 36px;  
     }
+}
+
+// メイン　tekeOut EAT In 文字位置
+
+.c-title--sub {
+    margin-left: 15px;
+    padding-top: 11px;
+    margin-bottom: auto;
+    font-size: 41px;
+}
+
+// メイン　teke Out EAT In 文字下線
+
+.c-title--underline::after {
+    content: "";
+    display: inline-block;
+    background-color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+.c-title--sentence {
+    font-size: 22px;
 }
