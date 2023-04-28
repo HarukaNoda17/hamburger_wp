@@ -59,3 +59,11 @@ article {
         " main sidebar "
         " footer footer "
 }
+
+.c-background--overlay::after {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}

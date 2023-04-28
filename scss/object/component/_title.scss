@@ -40,6 +40,11 @@
 .c-title {
     &--main {
         font-size: 36px;  
+        padding: 119px 134px 115px 25px;
+        @media screen and (min-width: 1025px) {
+            padding-left: 86px;
+            font-size: 45px;
+        }
     }
 }
 
@@ -66,4 +71,24 @@
     font-size: 22px;
     padding-top: 7px;
     padding-left: 10px;
+}
+
+// google map 見出し文字
+
+.c-title--access {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+// footer 文字
+
+.c-title--footer {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.c-title--vertical-line::after {
+    content: "";
+    display: inline-block;
+    background-color: #fff;
 }
