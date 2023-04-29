@@ -40,9 +40,7 @@
 .c-title {
     &--main {
         font-size: 36px;  
-        padding: 119px 134px 115px 25px;
         @media screen and (min-width: 1025px) {
-            padding-left: 86px;
             font-size: 45px;
         }
     }
@@ -55,7 +53,13 @@
     padding-top: 11px;
     margin-bottom: auto;
     font-size: 50px;
-}
+@media screen and (min-width: 768px) {
+    font-size: 44px;
+    }
+    @media screen and (min-width: 1025px) {
+    font-size: 50px;
+    }
+}    
 
 // メイン　teke Out EAT In 文字下線
 

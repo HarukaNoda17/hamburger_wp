@@ -24,3 +24,29 @@
         font-size: 64px;
     }
 }
+
+.l-header__top__menu {
+    margin-top: 14px;
+    margin-right: 16px;
+    margin-left: auto;
+    @media screen and (min-width: 1025px) {
+        display: none;
+    }
+}
+
+// ハンバーガーボタン出現
+
+.l-header__top__menu .c-button--menu {
+    font-size: 20px;
+    @media (min-width: 520px) {
+    font-size: 34px;
+    }
+}
+
+// main eatIn 
+
+.l-main .p-visual--sub--eatIn .c-title--sub {
+    margin-left: 15px;
+    padding-top: 11px;
+    margin-bottom: auto;
+}

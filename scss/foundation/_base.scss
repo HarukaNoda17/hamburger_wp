@@ -50,14 +50,22 @@ article {
 // header　幅指定
 
 .wrapper {
-    width: 81%;
-    display: grid;
-    grid-template-rows: 11rem auto 9.375rem;
-    grid-template-columns: 81vw 1fr;
-    grid-template-areas:
-        " header sidebar "
-        " main sidebar "
-        " footer footer "
+    width: 100%;
+    height: 100%;
+    @media screen and (min-width: 1025px) {
+        width: 81%;
+        display: grid;
+        grid-template-rows: 11rem auto 9.375rem;
+        grid-template-columns: 81vw 1fr;
+        grid-template-areas:
+            " header sidebar "
+            " main sidebar "
+            " footer footer "
+    }    
+}
+
+.l-header__top {
+    display: flex;
 }
 
 .c-background--overlay::after {
