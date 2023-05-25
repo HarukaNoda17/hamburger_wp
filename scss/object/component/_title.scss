@@ -34,3 +34,65 @@
     margin-top: 5.3125rem;
     }
 }
+
+// main 文字スタイル
+
+.c-title {
+    &--main {
+        font-size: 36px;  
+        @media screen and (min-width: 1025px) {
+            font-size: 45px;
+        }
+    }
+}
+
+// メイン　tekeOut EAT In 文字位置
+
+.c-title--sub {
+    margin-left: 15px;
+    padding-top: 11px;
+    margin-bottom: auto;
+    font-size: 50px;
+@media screen and (min-width: 768px) {
+    font-size: 44px;
+    }
+    @media screen and (min-width: 1025px) {
+    font-size: 50px;
+    }
+}    
+
+// メイン　teke Out EAT In 文字下線
+
+.c-title--underline::after {
+    content: "";
+    display: inline-block;
+    background-color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+.c-title--sentence {
+    font-size: 22px;
+    padding-top: 7px;
+    padding-left: 10px;
+}
+
+// google map 見出し文字
+
+.c-title--access {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+// footer 文字
+
+.c-title--footer {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.c-title--vertical-line::after {
+    content: "";
+    display: inline-block;
+    background-color: #fff;
+}

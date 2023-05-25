@@ -2,3 +2,46 @@
 .c-background-color--base {
     background-color: #fff7ef;
 }
+
+// main背景color
+
+.c-background-color--white {
+    background-color: #fff;
+}
+
+// google map 
+
+.c-background--map {
+    background-image: url(/images/front/google-map-full.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.p-access .c-background--map {
+    background-size: cover;
+    display: inline-block;
+    height: auto;
+    min-height: 43.1875rem;
+    position: relative;
+    z-index: 1;
+}
+
+.c-background--overlay::after {
+    content: "";
+    display: block;
+}
+
+.l-main .p-access .c-background--map .c-title--access {
+    position: inherit;
+    z-index: 3;
+}
+
+.l-main .p-access .c-background--map .c-title--underline {
+    position: inherit;
+}
+
+// footer 背景
+
+.c-background--footer {
+    background-image: url(/images/front/footer.png);
+}

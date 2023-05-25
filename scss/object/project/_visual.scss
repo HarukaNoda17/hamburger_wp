@@ -1,0 +1,141 @@
+// フロントページ　メイン写真 ダミーサイト
+
+.p-visual--main {
+    background-image:url(/images/front/main-visual-1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    }
+@media screen and (min-width: 1025px) {
+    height: 33.125rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+    }
+}
+
+//  フロントページ　サブ写真
+
+.p-visual--sub {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 131px;
+@media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    }
+@media screen and (min-width: 1025px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 131px;
+    } 
+}
+
+.p-visual--sub > li{
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex: 1 0 auto;
+    }
+@media screen and (min-width: 1025px) {
+    display: flex;
+    flex: 1 0 auto;
+}
+}
+
+// 　フロントページ　サブ写真　takeOut
+
+.p-visual--sub--takeOut {
+    background-image: url(/images/front/main-visual-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    min-height: 642px;
+    margin: 0 20px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    gap: 4rem;
+    position: relative;
+@media screen and (min-width: 768px) {
+    width: calc(50vw - 60px);
+    margin: 0px 40px;
+    }
+@media screen and (min-width: 1025px) {
+    width: calc(40.5vw - 60px);
+    margin: 0px 40px;
+    }
+@media (min-width: 1280px) {
+    width: calc(40.5vw - 151px);
+    margin: inherit;
+    margin-left: 111px;
+    margin-right: 80px;
+    }
+}
+
+//  フロントページ　サブ写真　eatIn
+
+.p-visual--sub--eatIn {
+    background-image: url(/images/front/main-visual-3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    min-height: 643px;
+    margin: 0 20px 49px 19px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    gap: 4rem;
+    position: relative;
+@media screen and (min-width: 768px) {
+    width: calc(50vw - 60px);
+    margin: inherit;
+    }
+@media screen and (min-width: 1025px) {
+    width: calc(40.5vw - 60px);
+    margin: inherit;
+    }
+@media (min-width: 1280px) {
+    width: calc(40.5vw - 152px);
+    margin: inherit;
+    margin-right: 112px;
+    }
+}
+
+// 　tekeOut EAT In 文字下白線
+
+.p-visual--sub--takeOut > .c-title--underline::after {
+    width: 2.118125rem;
+    height: 0.25rem;
+    bottom: -2rem;
+    right: 10.5rem;
+@media screen and (min-width: 768px) {
+    right: 11.5rem;
+    }
+@media screen and (min-width: 1025px) {
+    right: 13rem;
+    }
+}
+
+.p-visual--sub--eatIn > .c-title--underline::after {
+    width: 33.89px;
+    height: 4px;
+    bottom: -2rem;
+    left: -7rem;
+@media screen and (min-width: 768px) {
+    right: 11.5rem;
+    }
+@media screen and (min-width: 1025px) {
+    right: 13rem;
+    }
+}
+
+// takeOut EATIn 背景
+
+.p-visual--sub--sentence {
+    opacity: 0.8;
+    display: inline-block;
+    height: auto;
+}

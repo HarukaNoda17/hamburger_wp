@@ -7,6 +7,8 @@
 /* layout */
 @use "layout/header";
 @use "layout/sidebar";
+@use"layout/main";
+@use"layout/footer";
 
 /* object */
 
@@ -24,5 +26,5 @@
 // Project
 @use "object/project/search";
 @use "object/project/sideMenu";
-
-// Utility
+@use"object/project/visual";
+@use"object/project/access";

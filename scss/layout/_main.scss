@@ -1,0 +1,76 @@
+// メインビュジュアル　ハンバーガー写真　ダミーサイト
+
+.l-main {
+    height: auto;
+    background-color: #fffdfa;
+    grid-area: main;
+}
+
+.l-main .p-visual--sub {
+    width: 100%;
+    list-style: none;
+    grid-area: mainMiddle / mainMiddle / mainMiddle / mainMiddle;
+}
+
+// ダミーサイト文字　配置
+
+.l-main .p-visual--main .c-title--main {
+    padding: 119px 134px 115px 25px;
+@media screen and (min-width: 1025px) {
+    padding-left: 86px;
+    }
+}
+
+.l-main .p-visual--main {
+    grid-area: mainTop;
+}
+
+// メインサブ　takeOut EAT In 
+
+.c-text--sub {
+    margin: 3px 10px 15px;
+}
+
+.l-main .p-visual--sub--sentence {
+    margin-bottom: 15px;
+}
+
+.l-main .p-visual--sub--eatIn {
+    position: relative;
+}
+
+.l-main .p-visual--sub--eatIn .sub-section {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-main .p-visual--sub--eatIn .sub-section .c-title--sentence {
+    padding-top: 7px;
+    padding-left: 10px;
+}
+
+.l-main .p-visual--sub--eatIn .sub-section .c-text--sub {
+    margin: 3px 11px 15px 10px;
+}
+
+.l-main .p-visual--sub--takeOut {
+    position: relative;
+}
+
+.l-main .p-visual--sub--takeOut .c-title--sub {
+    margin-left: 15px;
+    padding-top: 11px;
+    margin-bottom: auto;
+}
+
+.l-main .p-visual--sub--takeOut .sub-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px;
+}
+
+.l-main .p-access {
+    position: relative;
+    grid-area: mainBottom;
+}
