@@ -653,17 +653,17 @@ pre {
   background-position: center;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .p-visual--main {
+    margin-bottom: 40px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .p-visual--main {
     height: 33.125rem;
     display: flex;
     align-items: center;
     margin-bottom: 120px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .p-visual--main {
-    margin-bottom: 40px;
   }
 }
 
@@ -725,6 +725,14 @@ pre {
     margin: 0px 40px;
   }
 }
+@media (min-width: 1280px) {
+  .p-visual--sub--takeOut {
+    width: calc(40.5vw - 151px);
+    margin: inherit;
+    margin-left: 111px;
+    margin-right: 80px;
+  }
+}
 
 .p-visual--sub--eatIn {
   background-image: url(/images/front/main-visual-3.jpg);
@@ -749,6 +757,13 @@ pre {
   .p-visual--sub--eatIn {
     width: calc(40.5vw - 60px);
     margin: inherit;
+  }
+}
+@media (min-width: 1280px) {
+  .p-visual--sub--eatIn {
+    width: calc(40.5vw - 152px);
+    margin: inherit;
+    margin-right: 112px;
   }
 }
 

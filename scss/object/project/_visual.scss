@@ -5,14 +5,14 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    }
 @media screen and (min-width: 1025px) {
     height: 33.125rem;
     display: flex;
     align-items: center;
     margin-bottom: 120px;
-    }
-@media screen and (min-width: 768px) {
-    margin-bottom: 40px;
     }
 }
 
@@ -63,9 +63,15 @@
     width: calc(50vw - 60px);
     margin: 0px 40px;
     }
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1025px) {
     width: calc(40.5vw - 60px);
     margin: 0px 40px;
+    }
+@media (min-width: 1280px) {
+    width: calc(40.5vw - 151px);
+    margin: inherit;
+    margin-left: 111px;
+    margin-right: 80px;
     }
 }
 
@@ -90,6 +96,11 @@
 @media screen and (min-width: 1025px) {
     width: calc(40.5vw - 60px);
     margin: inherit;
+    }
+@media (min-width: 1280px) {
+    width: calc(40.5vw - 152px);
+    margin: inherit;
+    margin-right: 112px;
     }
 }
 
