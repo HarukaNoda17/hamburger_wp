@@ -601,6 +601,7 @@ pre {
   background-color: #f2ede9;
   border-radius: 10px;
   border-width: 1px;
+  cursor: pointer;
 }
 
 .c-form-search .c-form-search__keyword {
