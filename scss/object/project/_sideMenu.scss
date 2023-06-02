@@ -1,11 +1,3 @@
-.p-sideMenu {
-    display: flex;
-    justify-content: flex-end;
-    height: 100vh;
-    @media screen and (min-width: 1025px){
-        height: auto;
-    }
-}
 
 .p-sideMenu__main {
     @media screen and (min-width: 1025px){

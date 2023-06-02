@@ -1,15 +1,4 @@
 // 検索ポジション
-.c-form-search {
-    display: flex;
-    justify-content: center;
-    margin-left: 24px;
-        @media screen and (min-width: 1025px){
-        justify-content: flex-end;
-        margin-left: auto;
-        margin-right: 2%;
-        width: 35vw;
-        }
-}
 
 .c-form-search .c-form-search__submit {
     width: 20%;
