@@ -393,6 +393,11 @@ pre {
   position: relative;
   grid-area: mainBottom;
 }
+@media screen and (max-width: 767px) {
+  .l-main .p-access {
+    margin-top: -90px;
+  }
+}
 
 .l-footer {
   text-align: center;
@@ -727,6 +732,11 @@ pre {
   display: flex;
   justify-content: space-around;
   margin-bottom: 131px;
+}
+@media screen and (max-width: 767px) {
+  .p-visual--sub {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
   .p-visual--sub {

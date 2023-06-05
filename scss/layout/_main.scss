@@ -73,4 +73,7 @@
 .l-main .p-access {
     position: relative;
     grid-area: mainBottom;
+@media screen and (max-width: 767px) {
+    margin-top: -90px;
+    }
 }
