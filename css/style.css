@@ -327,9 +327,14 @@ pre {
   margin-top: 25px;
   margin-right: 17px;
   font-size: 2.5rem;
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 2px;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-color: #f2ede9;
+}
+@media screen and (min-width: 1025px) {
+  .side-wrapper .p-sideMenu .c-img--xmark::before {
+    display: none;
+  }
 }
 
 .side-wrapper .p-sideMenu__main.is-open {
