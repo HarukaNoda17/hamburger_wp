@@ -9,3 +9,13 @@
     text-indent: 3rem;
     background-position: 16px 11px;
 }
+
+// バツボタン
+
+.c-img--xmark::before {
+    content: "\f00d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    cursor: pointer;
+}
