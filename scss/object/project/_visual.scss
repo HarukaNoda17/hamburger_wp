@@ -1,4 +1,6 @@
-// フロントページ　メイン写真 ダミーサイト
+// フロントページ　
+
+// メイン写真 ダミーサイト
 
 .p-visual--main {
     background-image:url(/images/front/main-visual-1.jpg);
@@ -142,3 +144,69 @@
     display: inline-block;
     height: auto;
 }
+
+// アーカイブページ
+
+.p_visual__archive--main{
+    background-image: url(/images/archive/top_01.png);
+    background-size: inherit;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-position: 32% -78%;
+    height: 280px;
+@media screen and (min-width: 768px) {
+    background-position: 47% -77%;
+    }
+}
+
+.p_visual__archive--main .c-title--main {
+    position: relative;
+    display: flex;
+    z-index: 2;
+@media screen and (min-width: 600px) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+@media screen and (min-width: 768px) {
+    font-size: 60px;
+    }   
+}
+
+.p_visual__archive--main .c-title--under-text::after {
+    position: absolute;
+    bottom: 5rem;
+@media screen and (min-width: 600px) {
+    position: inherit;
+    bottom: 0px;
+    }
+@media screen and (min-width: 768px) {
+    bottom: -3px;
+    }
+}
+
+.p-visual__archive--sentence .c-title--archive {
+    margin: 30px 101px 30px 22px;
+@media screen and (min-width: 768px) {
+    margin-top: 36px;
+    margin-left: 42px;
+    }
+@media screen and (min-width: 1025px) {
+    margin: 60px auto 25px 100px;
+    }
+}
+
+.p-visual__archive--sentence .c-text--archive {
+    height: auto;
+    width: 89%;
+    text-align: justify;
+    margin: 30px 18px 19px 22px;
+@media screen and (min-width: 768px) {
+    margin: 25px 35px 37px 42px;
+    }
+@media screen and (min-width: 1025px) {
+    width: auto;
+    margin: auto 100px 70px;
+    }
+}    

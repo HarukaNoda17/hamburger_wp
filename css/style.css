@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -426,6 +427,25 @@ pre {
   }
 }
 
+.l-main .p-visual__archive--main {
+  grid-area: mainTop/mainTop/mainTop/mainTop;
+}
+
+.l-main .p_visual__archive--main .c-title--main {
+  padding: 119px 134px 115px 25px;
+}
+@media screen and (min-width: 600px) {
+  .l-main .p_visual__archive--main .c-title--main {
+    padding-top: 102px;
+    padding-bottom: 102px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .l-main .p_visual__archive--main .c-title--main {
+    padding-left: 86px;
+  }
+}
+
 .l-footer {
   text-align: center;
   grid-area: footer;
@@ -494,6 +514,16 @@ pre {
 
 .c-background--footer {
   background-image: url(/images/front/footer.png);
+}
+
+.u-background--overlay--archive::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .c-button--menu {
@@ -649,6 +679,15 @@ pre {
   background-color: #fff;
 }
 
+.c-title--under-text::after {
+  content: "チーズバーガー";
+  font-size: 16px;
+}
+
+.c-title--archive {
+  font-size: 28px;
+}
+
 .c-text--sidebar {
   font-size: 20px;
   font-family: "M PLUS 1p", sans-serif;
@@ -673,6 +712,10 @@ pre {
   font-size: 14px;
   color: #ffffff;
   text-align: center;
+}
+
+.c-text--archive {
+  font-size: 16px;
 }
 
 .c-form-search .c-form-search__submit {
@@ -915,6 +958,88 @@ pre {
   opacity: 0.8;
   display: inline-block;
   height: auto;
+}
+
+.p_visual__archive--main {
+  background-image: url(/images/archive/top_01.png);
+  background-size: inherit;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-position: 32% -78%;
+  height: 280px;
+}
+@media screen and (min-width: 768px) {
+  .p_visual__archive--main {
+    background-position: 47% -77%;
+  }
+}
+
+.p_visual__archive--main .c-title--main {
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+@media screen and (min-width: 600px) {
+  .p_visual__archive--main .c-title--main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p_visual__archive--main .c-title--main {
+    font-size: 60px;
+  }
+}
+
+.p_visual__archive--main .c-title--under-text::after {
+  position: absolute;
+  bottom: 5rem;
+}
+@media screen and (min-width: 600px) {
+  .p_visual__archive--main .c-title--under-text::after {
+    position: inherit;
+    bottom: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p_visual__archive--main .c-title--under-text::after {
+    bottom: -3px;
+  }
+}
+
+.p-visual__archive--sentence .c-title--archive {
+  margin: 30px 101px 30px 22px;
+}
+@media screen and (min-width: 768px) {
+  .p-visual__archive--sentence .c-title--archive {
+    margin-top: 36px;
+    margin-left: 42px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual__archive--sentence .c-title--archive {
+    margin: 60px auto 25px 100px;
+  }
+}
+
+.p-visual__archive--sentence .c-text--archive {
+  height: auto;
+  width: 89%;
+  text-align: justify;
+  margin: 30px 18px 19px 22px;
+}
+@media screen and (min-width: 768px) {
+  .p-visual__archive--sentence .c-text--archive {
+    margin: 25px 35px 37px 42px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual__archive--sentence .c-text--archive {
+    width: auto;
+    margin: auto 100px 70px;
+  }
 }
 
 .p-access--map::before {

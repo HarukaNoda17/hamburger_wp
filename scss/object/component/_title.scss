@@ -95,3 +95,14 @@
     display: inline-block;
     background-color: #fff;
 }
+
+// アーカイブページ　トップ
+
+.c-title--under-text::after {
+    content: "チーズバーガー";
+    font-size: 16px;
+}
+
+.c-title--archive {
+    font-size: 28px;
+}
