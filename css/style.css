@@ -526,9 +526,21 @@ pre {
   z-index: 1;
 }
 
+.c-background-color--card {
+  background-color: rgb(60, 43, 28);
+}
+
 .c-button--menu {
   cursor: pointer;
   color: #707070;
+}
+
+.c-button--archive {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(112, 112, 112);
+  text-align: center;
+  border-radius: 20px;
 }
 
 .c-font-family--mplus1 {
@@ -580,6 +592,16 @@ pre {
   font-weight: 900;
   font-style: normal;
   cursor: pointer;
+}
+
+.c-img--current-page {
+  background-image: url(/images/archive/page.png);
+  background-repeat: no-repeat;
+}
+
+.c-img--prev {
+  background-image: url(/images/archive/prev.png);
+  background-repeat: no-repeat;
 }
 
 .c-title--sidebar {
@@ -688,6 +710,18 @@ pre {
   font-size: 28px;
 }
 
+.c-title--card {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.c-title--subheading {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
 .c-text--sidebar {
   font-size: 20px;
   font-family: "M PLUS 1p", sans-serif;
@@ -718,6 +752,29 @@ pre {
   font-size: 16px;
 }
 
+.c-text--card {
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+}
+
+.c-text--pagination {
+  font-size: 16px;
+  font-weight: normal;
+  color: #707070;
+}
+@media screen and (min-width: 768px) {
+  .c-text--pagination {
+    visibility: hidden;
+    width: 0px;
+  }
+}
+
+.c-img--next {
+  background-image: url(/images/archive/next.png);
+  background-repeat: no-repeat;
+}
+
 .c-form-search .c-form-search__submit {
   width: 20%;
   height: 2.875rem;
@@ -733,6 +790,14 @@ pre {
   border-radius: 10px;
   border-width: 1px;
   margin-right: 12px;
+}
+
+.c-border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(112, 112, 112);
+  -o-border-image: initial;
+     border-image: initial;
 }
 
 .u-background--overlay.js-height::after {
@@ -1110,6 +1175,224 @@ pre {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.p-card__menu {
+  display: flex;
+  flex-direction: column;
+  margin-right: 18.9px;
+  margin-bottom: 20.9px;
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .p-card__menu {
+    flex-direction: row;
+    margin-right: 35px;
+    margin-bottom: 20.5px;
+    margin-left: 43px;
+  }
+}
+@media (min-width: 1280px) {
+  .p-card__menu {
+    margin: auto 100px 30px;
+  }
+}
+
+.p-card__menu--image {
+  min-height: 14.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-card__menu--image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 40% center;
+       object-position: 40% center;
+    width: 50%;
+  }
+}
+
+.p-card__menu--caption {
+  min-height: 22.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-card__menu--caption {
+    width: 50%;
+  }
+}
+
+.p-card__menu--caption .c-title--card {
+  margin: 31.5px auto 24px 17px;
+}
+@media screen and (min-width: 768px) {
+  .p-card__menu--caption .c-title--card {
+    margin-top: 30px;
+    margin-left: 34.7px;
+  }
+}
+@media (min-width: 1280px) {
+  .p-card__menu--caption .c-title--card {
+    font-size: 25px;
+    margin-top: 53px;
+    margin-left: 63px;
+    margin-bottom: 47px;
+  }
+}
+
+.p-card__menu--caption .c-title--subheading {
+  margin-bottom: 10px;
+  margin-left: 17px;
+}
+@media screen and (min-width: 768px) {
+  .p-card__menu--caption .c-title--subheading {
+    margin-left: 34.7px;
+  }
+}
+@media (min-width: 1280px) {
+  .p-card__menu--caption .c-title--subheading {
+    font-size: 20px;
+    margin-left: 63px;
+    margin-bottom: 17px;
+  }
+}
+
+.p-card__menu--caption .c-text--card {
+  height: auto;
+  text-align: justify;
+  margin: auto 17px 40px;
+}
+@media screen and (min-width: 768px) {
+  .p-card__menu--caption .c-text--card {
+    margin: auto 34.7px 45px;
+  }
+}
+@media (min-width: 1280px) {
+  .p-card__menu--caption .c-text--card {
+    width: auto;
+    text-align: justify;
+    margin: auto 63px 60px;
+  }
+}
+
+.p-card__menu--caption .c-button--archive {
+  width: 10.1875rem;
+  height: 2.625rem;
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto 93px 43.7px 79.9px;
+}
+@media screen and (min-width: 600px) {
+  .p-card__menu--caption .c-button--archive {
+    width: 13rem;
+    height: 3.5rem;
+    display: block;
+    margin: 0px auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-card__menu--caption .c-button--archive {
+    width: 10.1875rem;
+    height: 2.625rem;
+    margin: auto 93px 43.7px 79.9px;
+  }
+}
+@media (min-width: 850px) {
+  .p-card__menu--caption .c-button--archive {
+    margin: auto 99.8px 40px 114.7px;
+  }
+}
+@media (min-width: 1280px) {
+  .p-card__menu--caption .c-button--archive {
+    width: 18.25rem;
+    height: 4.75rem;
+    border-radius: 40px;
+    margin: 0px 0px 60px 20%;
+  }
+}
+
+.p-card__menu:last-of-type {
+  margin-bottom: 60.4px;
+}
+@media screen and (min-width: 768px) {
+  .p-card__menu:last-of-type {
+    margin-bottom: 105.5px;
+  }
+}
+
+.p-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.1875rem;
+  width: 89vw;
+  margin: auto;
+  margin-bottom: 31px;
+}
+@media screen and (min-width: 768px) {
+  .p-pagination {
+    justify-content: center;
+    width: 72vw;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-pagination {
+    margin-bottom: 64px;
+  }
+}
+
+.p-pagination .prev-link, .p-pagination .next-link {
+  text-decoration: none;
+  display: flex;
+}
+
+.p-pagination .prev-link .c-img--current-page {
+  width: 7rem;
+  background-position: center center;
+}
+@media (max-width: 767px) {
+  .p-pagination .prev-link .c-img--current-page {
+    display: none;
+  }
+}
+
+.p-pagination .prev-link .c-img--prev {
+  background-position: 0px;
+  width: 30px;
+  filter: brightness(0.5);
+}
+
+.p-pagination .pagination-link .number-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0px 8px;
+}
+
+.p-pagination .pagination-link .number-list .page-number {
+  color: rgb(112, 112, 112);
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  padding: 6px 13px;
+}
+
+.p-pagination .pagination-link .number-list .page-number:first-of-type {
+  color: rgb(255, 255, 255);
+  background-color: rgb(60, 43, 28);
+}
+
+@media (max-width: 767px) {
+  .p-pagination .pagination-link {
+    display: none;
+  }
+}
+
+.p-pagination > .next-link .c-img--next {
+  width: 3rem;
+  filter: brightness(0.5);
+  background-position: 12px center;
 }
 
 /* foundation */

@@ -29,3 +29,24 @@
 .c-text--archive {
     font-size: 16px;
 }
+
+.c-text--card {
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+.c-text--pagination {
+    font-size: 16px;
+    font-weight: normal;
+    color: #707070;
+@media screen and (min-width: 768px) {
+    visibility: hidden;
+    width: 0px;
+    }
+}
+
+.c-img--next {
+    background-image: url(/images/archive/next.png);
+    background-repeat: no-repeat;
+}
