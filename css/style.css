@@ -784,12 +784,18 @@ pre {
   cursor: pointer;
 }
 
-.c-form-search .c-form-search__keyword {
+.p-search--form .c-form-search .c-form-search__keyword {
   width: 70%;
   height: 2.875rem;
+  margin-right: 12px;
   border-radius: 10px;
   border-width: 1px;
-  margin-right: 12px;
+}
+
+.p-search--form .c-form-search .c-img--magnifying-glass {
+  font-size: 24px;
+  text-indent: 3rem;
+  background-position: 16px 11px;
 }
 
 .c-border {
@@ -847,6 +853,18 @@ pre {
     margin-right: 2%;
     width: 35vw;
   }
+}
+
+input::-moz-placeholder {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+
+input::placeholder {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1025px) {

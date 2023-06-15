@@ -9,10 +9,16 @@
     cursor: pointer;
 }
 
-.c-form-search .c-form-search__keyword {
+.p-search--form .c-form-search .c-form-search__keyword {
     width: 70%;
     height: 2.875rem;
+    margin-right: 12px;
     border-radius: 10px;
     border-width: 1px;
-    margin-right: 12px;
+}
+
+.p-search--form .c-form-search .c-img--magnifying-glass {
+    font-size: 24px;
+    text-indent: 3rem;
+    background-position: 16px 11px;
 }
