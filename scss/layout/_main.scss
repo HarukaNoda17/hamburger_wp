@@ -96,3 +96,12 @@
     padding-left: 86px;
     }
 }
+
+// シングルページ
+
+.l-main .p-visual__single--main .c-title--main, .l-main .p-visual__page--main .c-title--main {
+    padding: 91px 39px 91px 26px;
+@media screen and (min-width: 600px) {
+    margin-left: 40px;
+    }
+}
