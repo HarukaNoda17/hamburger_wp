@@ -539,6 +539,18 @@ pre {
   background-color: rgb(60, 43, 28);
 }
 
+.c-button--single {
+  cursor: pointer;
+  background-color: #f2ede9;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  width: 100%;
+  height: 81px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
 .c-button--menu {
   cursor: pointer;
   color: #707070;
@@ -758,6 +770,12 @@ pre {
 .c-title__single--h6 {
   font-size: 20px;
   font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.c-text--base {
+  font-size: 16px;
+  font-weight: normal;
   font-family: "M PLUS 1p", sans-serif;
 }
 
@@ -1328,6 +1346,13 @@ input::placeholder {
   }
 }
 
+.p-visual__single--sub .second-block--img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
 .p-visual__single--sub .first-block__top--img {
   width: 100%;
   height: 11.5rem;
@@ -1445,6 +1470,51 @@ input::placeholder {
     display: grid;
     grid-template-rows: 191px 167px;
     grid-template-columns: 1fr 581px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+
+.p-visual__single--sub .first-block__middle02--img {
+  height: 6rem;
+  margin-left: 9px;
+}
+@media (min-width: 500px) {
+  .p-visual__single--sub .first-block__middle02--img {
+    height: 7rem;
+  }
+}
+@media (min-width: 600px) {
+  .p-visual__single--sub .first-block__middle02--img {
+    height: 8rem;
+  }
+}
+@media (min-width: 700px) {
+  .p-visual__single--sub .first-block__middle02--img {
+    height: 10rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-visual__single--sub .first-block__middle02--img {
+    width: 43vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    margin-left: 21px;
+  }
+}
+@media (min-width: 1280px) {
+  .p-visual__single--sub .first-block__middle02--img {
+    margin: 0;
+    grid-row: 1/3;
+    grid-column: 2;
+    height: 100%;
+    width: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
   }
 }
 
@@ -1542,6 +1612,23 @@ input::placeholder {
   margin-bottom: 20px;
 }
 
+.p-visual__single--list .list-group--02, .p-visual__single--list .list-group--05 {
+  margin-left: 18px;
+}
+
+.p-visual__single--list .list-group--03 {
+  margin-bottom: 60px;
+}
+
+.p-visual__single--list .list-group--06 {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .p-visual__single--list .list-group--06 {
+    margin-bottom: 60px;
+  }
+}
+
 .p-visual__single--code {
   background-color: #f5f5f5;
   margin-right: 20px;
@@ -1573,6 +1660,84 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .p-visual__single--code pre {
     padding-right: 69px;
+  }
+}
+
+.p-visual__single--table {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .p-visual__single--table {
+    margin: 60px;
+    margin-top: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual__single--table {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+
+.p-visual__single--table table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.p-visual__single--table table tr {
+  background-color: #fff;
+}
+
+.p-visual__single--table table tr td {
+  border: solid 1px #707070;
+  padding: 28px 0 27px 30px;
+}
+
+.p-visual__single--table table tr td:first-of-type {
+  padding-right: 41px;
+}
+
+.p-visual__single--table table tr td:last-of-type {
+  padding-right: 106px;
+}
+
+.p-visual__single--button {
+  margin: auto 20px 30px;
+}
+@media screen and (min-width: 768px) {
+  .p-visual__single--button {
+    width: 51%;
+    margin-left: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual__single--button {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+
+.p-visual__single--bold {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+  margin-left: 20px;
+  margin-bottom: 177px;
+}
+@media screen and (min-width: 768px) {
+  .p-visual__single--bold {
+    margin-left: 60px;
+    margin-bottom: 228px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual__single--bold {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 353px;
   }
 }
 
