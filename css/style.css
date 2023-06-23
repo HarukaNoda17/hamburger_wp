@@ -1741,6 +1741,29 @@ input::placeholder {
   }
 }
 
+.p-visual__page--main {
+  background-image: url(/images/shop/shop.png);
+  background-size: 56rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  height: 285px;
+  background-position: center 37%;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .p-visual__page--main {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual__page--main {
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 60px;
+  }
+}
+
 .p-access--map::before {
   content: "";
   display: block;
